@@ -13,13 +13,13 @@ let Schedules = Scheduler([
             Scheduler([
               { func: dummy("Level 3 function with delay 1000"), time: 1000 }
             ])
-          ], 
+          ],
           time: 2000
         }
       ])
-    ], 
+    ],
     time: 4000
   }
 ]);
 
-Schedules();
+Schedules && Schedules();

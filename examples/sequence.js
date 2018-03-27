@@ -1,5 +1,5 @@
-const dummy = (id) => (() => { 
-  console.log(`Function ${id}`); 
+const dummy = (id) => (() => {
+  console.log(`Function ${id}`);
 });
 
 let Schedules = Scheduler([
@@ -8,6 +8,10 @@ let Schedules = Scheduler([
   { func: [dummy(3), dummy(4)], time: 3000 }
 ]);
 
-Schedules(() => {
-  console.log("Yay! Completed!!");
-});
+if (Schedules) {
+  Schedules(() => {
+    console.log("Yay! Completed!!");
+  });
+} else {
+  console.log("Oops!! Schedules could not be made.");
+}
