@@ -12,7 +12,7 @@ An optional callback can be passed while calling the function. This callback wil
 
 ```javascript
 schedules = Scheduler(schedulesArray[, onSetupCompleteFunction]);
-schedules([callback]);
+schedules(callback);
 ```
 
 `schedulesArray` is an object containing two properties:
